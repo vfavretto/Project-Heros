@@ -1,8 +1,20 @@
+import React from 'react';
+import Header from '../components/Header/Header';
+import Hero from '../components/Hero/Hero';
+import Features from '../components/Features/Features';
+import Footer from '../components/Footer/Footer';
+import GlobalStyles from '../styles/GlobalStyles';
 
-function HomePage() {
+const HomePage: React.FC = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <>
+      <GlobalStyles />
+      <Header />
+      <Hero />
+      <Features />
+      <Footer />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
